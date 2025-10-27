@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """
-Basic tests for Prototype 1
-Run with: python test_basic.py
+Basic tests for KnowledgeFlow
+Run with: python -m pytest tests/test_basic.py -v
 """
 
 import sqlite3
 import os
+import sys
 from pathlib import Path
+
+# Add parent directory to path to import knowledgeflow modules
+sys.path.insert(0, str(Path(__file__).parent.parent / "knowledgeflow"))
+
 from main import init_db, create_note, create_task, DB_PATH
 
 
