@@ -1,0 +1,14 @@
+[project]
+name = "knowledgeflow"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=2.8.1",
+    "rich>=14.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+]
