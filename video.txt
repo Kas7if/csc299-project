@@ -1,0 +1,38 @@
+# KnowledgeFlow Demo Video
+
+**YouTube URL:** [To be added after recording]
+
+**Duration:** 6-8 minutes
+
+## Video Contents
+
+1. **Introduction** (1 min)
+   - Project overview
+   - Evolution from tasks1-5 to final system
+   - Technology stack
+
+2. **Live Demo** (4 min)
+   - Run demo_v2.py (with AI features)
+   - Interactive CLI walkthrough
+     - Create a note
+     - Create a task
+     - Search functionality
+     - AI summarization
+   - Show JSON data files
+   - Run test suite
+
+3. **Code Walkthrough** (2 min)
+   - json_storage.py architecture
+   - summarizer.py AI integration
+   - Test suite structure
+
+4. **Conclusion** (1 min)
+   - Key achievements
+   - Lessons learned
+   - Final statistics
+
+---
+
+**Recording Date:** November 24, 2025  
+**Recorded By:** Kashif Yaboi  
+**Status:** ⏳ Pending
