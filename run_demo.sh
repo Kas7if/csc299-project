@@ -8,12 +8,28 @@ echo "🎬 KnowledgeFlow Demo Script"
 echo "============================"
 echo ""
 
+# Load environment variables from .env file if it exists
+if [ -f ".env" ]; then
+    echo "📄 Loading API key from .env file..."
+    export $(cat .env | grep -v '^#' | xargs)
+    echo "✓ Environment loaded"
+    echo ""
+elif [ -f "../.env" ]; then
+    echo "📄 Loading API key from ../.env file..."
+    export $(cat ../.env | grep -v '^#' | xargs)
+    echo "✓ Environment loaded"
+    echo ""
+fi
+
 # Check if API key is set
 if [ -z "$OPENAI_API_KEY" ]; then
     echo "⚠️  WARNING: OPENAI_API_KEY not set!"
     echo "AI features will not work without the API key."
     echo ""
-    echo "To set it, run:"
+    echo "To fix this, create a .env file with:"
+    echo "OPENAI_API_KEY=your-api-key-here"
+    echo ""
+    echo "Or run:"
     echo "export OPENAI_API_KEY='your-api-key-here'"
     echo ""
     read -p "Continue anyway? (y/n) " -n 1 -r
@@ -21,6 +37,9 @@ if [ -z "$OPENAI_API_KEY" ]; then
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         exit 1
     fi
+else
+    echo "✓ API key detected"
+    echo ""
 fi
 
 # Navigate to knowledgeflow directory
