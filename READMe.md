@@ -2,6 +2,8 @@
 
 **CSC299 Final Project - Fall 2025**
 
+## 🎥 **[WATCH VIDEO DEMO](https://youtu.be/Yj2YoCUzWmw)** ⬅️ Click to see it in action!
+
 A hybrid personal knowledge management system combining note-taking, task management, and AI-powered features. Built through iterative development from experimental prototypes to production-ready system.
 
 ---
@@ -53,7 +55,7 @@ csc299-project/
 ├── specs/                      # Feature specifications
 ├── tests/                      # Legacy tests
 ├── SUMMARY.md                  # Development narrative (500+ words)
-├── video.txt                   # YouTube demo URL
+├── VIDEO.txt                   # YouTube demo URL
 └── README.md                   # This file
 ```
 
