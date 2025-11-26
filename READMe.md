@@ -229,7 +229,7 @@ Each iteration built upon lessons learned, leading to the final production-ready
 
 ## 🎬 Demo Video
 
-See the system in action: [video.txt](video.txt)
+See the system in action: [VIDEO.txt](VIDEO.txt)
 
 **Video Contents:**
 - Project overview and evolution
